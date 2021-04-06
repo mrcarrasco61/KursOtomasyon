@@ -10,3 +10,15 @@ C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\KursOtomasyonu\KursO
 C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.csproj.CoreCompileInputs.cache
 C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.exe
 C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.pdb
+C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\bin\Debug\KursOtomasyonu.exe.config
+C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\bin\Debug\KursOtomasyonu.exe
+C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\bin\Debug\KursOtomasyonu.pdb
+C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.csprojAssemblyReference.cache
+C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.AnaSayfa.resources
+C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.Form1.resources
+C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.KursiyerKayit.resources
+C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.Properties.Resources.resources
+C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.csproj.GenerateResource.cache
+C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.exe
+C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.pdb

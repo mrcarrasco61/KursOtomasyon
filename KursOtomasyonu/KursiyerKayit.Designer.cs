@@ -43,10 +43,10 @@ namespace KursOtomasyonu
             this.txtTcNo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtKursiyerNo = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnKursiyer = new System.Windows.Forms.Button();
+            this.dtgKursiyerList = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgKursiyerList)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -64,8 +64,8 @@ namespace KursOtomasyonu
             this.groupBox1.Controls.Add(this.txtTcNo);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtKursiyerNo);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.btnKursiyer);
+            this.groupBox1.Controls.Add(this.dtgKursiyerList);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1110, 526);
@@ -181,27 +181,29 @@ namespace KursOtomasyonu
             this.txtKursiyerNo.Size = new System.Drawing.Size(191, 22);
             this.txtKursiyerNo.TabIndex = 2;
             // 
-            // button1
+            // btnKursiyer
             // 
-            this.button1.Image = global::KursOtomasyonu.Properties.Resources.ogrenciekle;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(136, 384);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 97);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Kursiyer Ekle";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnKursiyer.Image = global::KursOtomasyonu.Properties.Resources.ogrenciekle;
+            this.btnKursiyer.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnKursiyer.Location = new System.Drawing.Point(136, 384);
+            this.btnKursiyer.Name = "btnKursiyer";
+            this.btnKursiyer.Size = new System.Drawing.Size(141, 111);
+            this.btnKursiyer.TabIndex = 1;
+            this.btnKursiyer.Text = "Kursiyer Ekle";
+            this.btnKursiyer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnKursiyer.UseVisualStyleBackColor = true;
+            this.btnKursiyer.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // dtgKursiyerList
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(322, 51);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(782, 469);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgKursiyerList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgKursiyerList.Location = new System.Drawing.Point(322, 51);
+            this.dtgKursiyerList.Name = "dtgKursiyerList";
+            this.dtgKursiyerList.RowHeadersWidth = 51;
+            this.dtgKursiyerList.RowTemplate.Height = 24;
+            this.dtgKursiyerList.Size = new System.Drawing.Size(782, 469);
+            this.dtgKursiyerList.TabIndex = 0;
+            this.dtgKursiyerList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // KursiyerKayit
             // 
@@ -215,7 +217,7 @@ namespace KursOtomasyonu
             this.Load += new System.EventHandler(this.KursiyerKayit_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgKursiyerList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -223,8 +225,8 @@ namespace KursOtomasyonu
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dtgKursiyerList;
+        private System.Windows.Forms.Button btnKursiyer;
         private System.Windows.Forms.Button btnNoUret;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RichTextBox rtbAdres;

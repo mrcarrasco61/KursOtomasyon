@@ -28,7 +28,7 @@ namespace KursOtomasyonu
 
         private void KursiyerKayit_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = KursiyerListele();
+            dtgKursiyerList.DataSource = KursiyerListele();
         }
 
         public List<Kursiyer> KursiyerListele()
@@ -62,6 +62,27 @@ namespace KursOtomasyonu
 
             db.connection.Close();
             return kursiyerler;
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnKursiyer.Text = "Kursiyer Güncelle";
+            txtKursiyerNo.Text = dtgKursiyerList.CurrentRow.Cells[1].Value.ToString();
+            txtTcNo.Text = dtgKursiyerList.CurrentRow.Cells[2].Value.ToString();
+            txtAdSoyad.Text = dtgKursiyerList.CurrentRow.Cells[3].Value.ToString();
+            txtTelNo.Text = dtgKursiyerList.CurrentRow.Cells[4].Value.ToString();
+            dtpKayitTarihi.Value = Convert.ToDateTime(dtgKursiyerList.CurrentRow.Cells[5].Value.ToString());
+            rtbAdres.Text = dtgKursiyerList.CurrentRow.Cells[6].Value.ToString();
+            
+
+
+
 
         }
     }
