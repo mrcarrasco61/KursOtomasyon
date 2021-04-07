@@ -22,3 +22,4 @@ C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtoma
 C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.csproj.CoreCompileInputs.cache
 C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.exe
 C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.pdb
+C:\Users\Muham\Desktop\Kurs otomasyon\190929004MuhammetKose\GitEntegre\KursOtomasyonu\KursOtomasyonu\obj\Debug\KursOtomasyonu.KursiyerDevamsizlik.resources

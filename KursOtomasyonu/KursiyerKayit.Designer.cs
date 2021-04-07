@@ -29,7 +29,10 @@ namespace KursOtomasyonu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KursiyerKayit));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSil = new System.Windows.Forms.Button();
+            this.btnTemizle = new System.Windows.Forms.Button();
             this.btnNoUret = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.rtbAdres = new System.Windows.Forms.RichTextBox();
@@ -51,6 +54,8 @@ namespace KursOtomasyonu
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnSil);
+            this.groupBox1.Controls.Add(this.btnTemizle);
             this.groupBox1.Controls.Add(this.btnNoUret);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.rtbAdres);
@@ -72,6 +77,32 @@ namespace KursOtomasyonu
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kayıt Ekleme Silme Güncelleme";
+            // 
+            // btnSil
+            // 
+            this.btnSil.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.Image")));
+            this.btnSil.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSil.Location = new System.Drawing.Point(17, 356);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(90, 78);
+            this.btnSil.TabIndex = 16;
+            this.btnSil.Text = "Temizle";
+            this.btnSil.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
+            // 
+            // btnTemizle
+            // 
+            this.btnTemizle.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.Image")));
+            this.btnTemizle.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnTemizle.Location = new System.Drawing.Point(17, 442);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(90, 78);
+            this.btnTemizle.TabIndex = 15;
+            this.btnTemizle.Text = "Temizle";
+            this.btnTemizle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnTemizle.UseVisualStyleBackColor = true;
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // btnNoUret
             // 
@@ -187,7 +218,7 @@ namespace KursOtomasyonu
             this.btnKursiyer.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnKursiyer.Location = new System.Drawing.Point(136, 384);
             this.btnKursiyer.Name = "btnKursiyer";
-            this.btnKursiyer.Size = new System.Drawing.Size(141, 111);
+            this.btnKursiyer.Size = new System.Drawing.Size(130, 102);
             this.btnKursiyer.TabIndex = 1;
             this.btnKursiyer.Text = "Kursiyer Ekle";
             this.btnKursiyer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -240,5 +271,7 @@ namespace KursOtomasyonu
         private System.Windows.Forms.TextBox txtTcNo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtKursiyerNo;
+        private System.Windows.Forms.Button btnTemizle;
+        private System.Windows.Forms.Button btnSil;
     }
 }

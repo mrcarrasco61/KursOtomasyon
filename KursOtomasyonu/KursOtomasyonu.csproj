@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,6 +60,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="KursiyerDevamsizlik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KursiyerDevamsizlik.Designer.cs">
+      <DependentUpon>KursiyerDevamsizlik.cs</DependentUpon>
+    </Compile>
     <Compile Include="KursiyerKayit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +74,7 @@
     </Compile>
     <Compile Include="KursiyerNoUretici.cs" />
     <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Devamsizlik.cs" />
     <Compile Include="Models\Kurs.cs" />
     <Compile Include="Models\Kursiyer.cs" />
     <Compile Include="Program.cs" />
@@ -76,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KursiyerDevamsizlik.resx">
+      <DependentUpon>KursiyerDevamsizlik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KursiyerKayit.resx">
       <DependentUpon>KursiyerKayit.cs</DependentUpon>

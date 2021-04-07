@@ -22,5 +22,11 @@ namespace KursOtomasyonu
             KursiyerKayit kursiyerKayit = new KursiyerKayit();
             kursiyerKayit.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            KursiyerDevamsizlik kursiyerDevamsizlik = new KursiyerDevamsizlik();
+            kursiyerDevamsizlik.Show();
+        }
     }
 }
