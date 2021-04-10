@@ -31,7 +31,7 @@ namespace KursOtomasyonu
         {
             this.dtgDevamsizlikList = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblDevamsizlikSayisi = new System.Windows.Forms.Label();
             this.cmbKursiyer = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -53,21 +53,21 @@ namespace KursOtomasyonu
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 124);
+            this.label1.Location = new System.Drawing.Point(22, 321);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Devamsızlık";
             // 
-            // label2
+            // lblDevamsizlikSayisi
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(121, 124);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.lblDevamsizlikSayisi.AutoSize = true;
+            this.lblDevamsizlikSayisi.ForeColor = System.Drawing.Color.Maroon;
+            this.lblDevamsizlikSayisi.Location = new System.Drawing.Point(121, 321);
+            this.lblDevamsizlikSayisi.Name = "lblDevamsizlikSayisi";
+            this.lblDevamsizlikSayisi.Size = new System.Drawing.Size(16, 17);
+            this.lblDevamsizlikSayisi.TabIndex = 2;
+            this.lblDevamsizlikSayisi.Text = "0";
             // 
             // cmbKursiyer
             // 
@@ -107,9 +107,9 @@ namespace KursOtomasyonu
             // 
             this.btnDevamsizlikEkle.Image = global::KursOtomasyonu.Properties.Resources.ogrenciekle;
             this.btnDevamsizlikEkle.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnDevamsizlikEkle.Location = new System.Drawing.Point(185, 175);
+            this.btnDevamsizlikEkle.Location = new System.Drawing.Point(118, 131);
             this.btnDevamsizlikEkle.Name = "btnDevamsizlikEkle";
-            this.btnDevamsizlikEkle.Size = new System.Drawing.Size(96, 98);
+            this.btnDevamsizlikEkle.Size = new System.Drawing.Size(96, 102);
             this.btnDevamsizlikEkle.TabIndex = 7;
             this.btnDevamsizlikEkle.Text = "Ekle";
             this.btnDevamsizlikEkle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -127,7 +127,7 @@ namespace KursOtomasyonu
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbKursiyer);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblDevamsizlikSayisi);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgDevamsizlikList);
             this.Name = "KursiyerDevamsizlik";
@@ -143,7 +143,7 @@ namespace KursOtomasyonu
 
         private System.Windows.Forms.DataGridView dtgDevamsizlikList;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblDevamsizlikSayisi;
         private System.Windows.Forms.ComboBox cmbKursiyer;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;

@@ -43,12 +43,24 @@ namespace KursOtomasyonu
         }
 
 
-        
+
         private void cmbKursiyerAd_SelectedIndexChanged(object sender, EventArgs e)
         {
             int.TryParse(cmbKursiyer.SelectedValue.ToString(), out _Id);
             KursiyerListele(_Id);
+            //select COUNT(*) AS 'GUN' from Devamsizlik d left join Kursiyer k on d.KursiyerId = k.Id where d.KursiyerId = 1
+            db.connection.Open();
+            db.command = new SqlCommand("select COUNT(*) AS 'GUN' from Devamsizlik d left join Kursiyer k on d.KursiyerId = k.Id where d.KursiyerId = @kId", db.connection);
+            db.command.Parameters.AddWithValue("kId", _Id);
+            db.reader = db.command.ExecuteReader();
+            while (db.reader.Read())
+            {
+                lblDevamsizlikSayisi.Text = db.reader["GUN"].ToString();
+            }
+       
+            db.connection.Close();
         }
+
 
         private void btnDevamsizlikEkle_Click(object sender, EventArgs e)
         {
@@ -87,6 +99,11 @@ namespace KursOtomasyonu
             }
             dtgDevamsizlikList.DataSource = devamsizlikList;
             db.connection.Close();
+
+
+           
+            
+
         }
     }
 }
