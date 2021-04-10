@@ -54,6 +54,12 @@
       <DependentUpon>AnaSayfa.cs</DependentUpon>
     </Compile>
     <Compile Include="Baglanti.cs" />
+    <Compile Include="EgitmenKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgitmenKayit.Designer.cs">
+      <DependentUpon>EgitmenKayit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,12 +81,16 @@
     <Compile Include="KursiyerNoUretici.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Devamsizlik.cs" />
+    <Compile Include="Models\Egitmen.cs" />
     <Compile Include="Models\Kurs.cs" />
     <Compile Include="Models\Kursiyer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AnaSayfa.resx">
       <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgitmenKayit.resx">
+      <DependentUpon>EgitmenKayit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

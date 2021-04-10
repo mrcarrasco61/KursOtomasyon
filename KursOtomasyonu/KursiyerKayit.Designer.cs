@@ -86,7 +86,7 @@ namespace KursOtomasyonu
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(90, 78);
             this.btnSil.TabIndex = 16;
-            this.btnSil.Text = "Temizle";
+            this.btnSil.Text = "Sil";
             this.btnSil.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSil.UseVisualStyleBackColor = true;
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);

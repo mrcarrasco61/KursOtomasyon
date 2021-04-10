@@ -28,5 +28,11 @@ namespace KursOtomasyonu
             KursiyerDevamsizlik kursiyerDevamsizlik = new KursiyerDevamsizlik();
             kursiyerDevamsizlik.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            EgitmenKayit egitmenler = new EgitmenKayit();
+            egitmenler.Show();
+        }
     }
 }
