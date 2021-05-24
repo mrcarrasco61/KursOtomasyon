@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace KursOtomasyonu
 {
+    
     public partial class Form1 : Form
     {
+        Baglanti db = new Baglanti();
         public Form1()
         {
             InitializeComponent();
@@ -19,8 +21,16 @@ namespace KursOtomasyonu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AnaSayfa anaSayfa = new AnaSayfa();
-            anaSayfa.Show();
+            string KullaniciAdi = txtkadi.Text;
+            string Sifre = txtsifre.Text;
+            Baglanti islemim = new Baglanti();
+            islemim.girisyap(KullaniciAdi,Sifre,this);
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            txtsifre.PasswordChar = '*';
         }
     }
 }

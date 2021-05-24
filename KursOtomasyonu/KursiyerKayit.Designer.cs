@@ -107,9 +107,9 @@ namespace KursOtomasyonu
             // btnNoUret
             // 
             this.btnNoUret.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnNoUret.Location = new System.Drawing.Point(136, 32);
+            this.btnNoUret.Location = new System.Drawing.Point(136, 22);
             this.btnNoUret.Name = "btnNoUret";
-            this.btnNoUret.Size = new System.Drawing.Size(139, 23);
+            this.btnNoUret.Size = new System.Drawing.Size(139, 33);
             this.btnNoUret.TabIndex = 14;
             this.btnNoUret.Text = "Kursiyer No Üret";
             this.btnNoUret.UseVisualStyleBackColor = true;

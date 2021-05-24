@@ -56,6 +56,7 @@ namespace KursOtomasyonu
                 egitmen.Brans = dataReader["Brans"].ToString();
                 egitmen.Maas = Convert.ToDecimal(dataReader["Maas"].ToString());
                 egitmen.TcNo = dataReader["TcNo"].ToString();
+                egitmen.MaasOdendi = Convert.ToBoolean(dataReader["MaasOdendi"]);
 
                 egitmenler.Add(egitmen);
             }
@@ -65,8 +66,8 @@ namespace KursOtomasyonu
 
         }
 
-        
 
+    
         private void btnEgitmenEkle_Click(object sender, EventArgs e)
         {
             if (btnEgitmenEkle.Text == "Egitmen Ekle")
@@ -78,35 +79,42 @@ namespace KursOtomasyonu
 
 
                 db.connection.Open();
-                db.command = new SqlCommand("Insert Into Egitmen values(@AdSoyad,@Brans,@Maas,@TcNo)", db.connection);
+                db.command = new SqlCommand("Insert Into Egitmen values(@AdSoyad,@Brans,@Maas,@TcNo,@MaasOdendi)", db.connection);
 
                 db.command.Parameters.AddWithValue("AdSoyad", _egitmen.AdSoyad);
                 db.command.Parameters.AddWithValue("Brans", _egitmen.Brans);
                 db.command.Parameters.AddWithValue("Maas", _egitmen.Maas);
                 db.command.Parameters.AddWithValue("TcNo", _egitmen.TcNo);
-
+                db.command.Parameters.AddWithValue("MaasOdendi", false);
 
                 db.command.ExecuteNonQuery();
 
                 db.connection.Close();
-                MessageBox.Show("Kayıt Eklendi");
+                MessageBox.Show("Kayıt Eklendi","Başarıyla");
                 dtgEgitmenList.DataSource = EgitmenListele();
 
             }
             else if (btnEgitmenEkle.Text == "Egitmen Güncelle")
             {
+                _egitmen.Id = Convert.ToInt32(dtgEgitmenList.CurrentRow.Cells[0].Value);
                 _egitmen.AdSoyad = txtEgitmenAdi.Text;
                 _egitmen.Brans = txtBrans.Text;
                 _egitmen.Maas = Convert.ToDecimal(txtMaas.Text);
                 _egitmen.TcNo = txtTcNo.Text;
+
 
                 db.connection.Open();
+                
                 db.command = new SqlCommand("Update Egitmen set AdSoyad=@AdSoyad,Brans=@Brans, Maas=@Maas,TcNo=@TcNo where Id=@Id", db.connection);
 
-                _egitmen.AdSoyad = txtEgitmenAdi.Text;
-                _egitmen.Brans = txtBrans.Text;
-                _egitmen.Maas = Convert.ToDecimal(txtMaas.Text);
-                _egitmen.TcNo = txtTcNo.Text;
+                db.command.Parameters.AddWithValue("Id", _egitmen.Id);
+                db.command.Parameters.AddWithValue("AdSoyad", _egitmen.AdSoyad);
+                db.command.Parameters.AddWithValue("Brans", _egitmen.Brans);
+                db.command.Parameters.AddWithValue("Maas", _egitmen.Maas);
+                db.command.Parameters.AddWithValue("TcNo", _egitmen.TcNo);
+                
+                
+
 
                 db.command.ExecuteNonQuery();
                 db.connection.Close();
@@ -121,16 +129,17 @@ namespace KursOtomasyonu
 
         }
 
-
+       
         private void dtgEgitmenList_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
             btnEgitmenEkle.Text = "Egitmen Güncelle";
+            
             txtEgitmenAdi.Text = dtgEgitmenList.CurrentRow.Cells[1].Value.ToString();
             txtBrans.Text = dtgEgitmenList.CurrentRow.Cells[2].Value.ToString();
             txtMaas.Text = dtgEgitmenList.CurrentRow.Cells[3].Value.ToString();
             txtTcNo.Text = dtgEgitmenList.CurrentRow.Cells[4].Value.ToString();
-           
+
             
         }
 
@@ -148,7 +157,7 @@ namespace KursOtomasyonu
             command.ExecuteNonQuery();
 
             db.connection.Close();
-            MessageBox.Show(_egitmen.AdSoyad + "isimli kursiyer Silindi");
+            MessageBox.Show(_egitmen.AdSoyad  +"  İsimli Eğitmen Silindi  ");
             dtgEgitmenList.DataSource = EgitmenListele();
 
             db.connection.Close();

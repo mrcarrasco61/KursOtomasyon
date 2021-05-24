@@ -137,11 +137,12 @@ namespace KursOtomasyonu
             // dtgEgitmenList
             // 
             this.dtgEgitmenList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgEgitmenList.Location = new System.Drawing.Point(322, 21);
+            this.dtgEgitmenList.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dtgEgitmenList.Location = new System.Drawing.Point(325, 18);
             this.dtgEgitmenList.Name = "dtgEgitmenList";
             this.dtgEgitmenList.RowHeadersWidth = 51;
             this.dtgEgitmenList.RowTemplate.Height = 24;
-            this.dtgEgitmenList.Size = new System.Drawing.Size(782, 499);
+            this.dtgEgitmenList.Size = new System.Drawing.Size(782, 505);
             this.dtgEgitmenList.TabIndex = 0;
             this.dtgEgitmenList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgEgitmenList_CellContentClick_1);
             // 

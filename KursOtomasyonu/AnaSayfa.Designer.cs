@@ -41,19 +41,13 @@ namespace KursOtomasyonu
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button12 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -118,6 +112,7 @@ namespace KursOtomasyonu
             this.button11.Text = "Kursiyer Atama İşlemleri";
             this.button11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button9
             // 
@@ -131,6 +126,7 @@ namespace KursOtomasyonu
             this.button9.Text = "Kurs İşlemleri";
             this.button9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // groupBox3
             // 
@@ -155,6 +151,7 @@ namespace KursOtomasyonu
             this.button3.Text = "Ders Atama İşlemleri";
             this.button3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -173,8 +170,7 @@ namespace KursOtomasyonu
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.button8);
-            this.groupBox4.Controls.Add(this.button7);
-            this.groupBox4.Location = new System.Drawing.Point(616, 307);
+            this.groupBox4.Location = new System.Drawing.Point(443, 307);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(278, 274);
             this.groupBox4.TabIndex = 5;
@@ -186,100 +182,38 @@ namespace KursOtomasyonu
             this.button8.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button8.Image = global::KursOtomasyonu.Properties.Resources.sertifika;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button8.Location = new System.Drawing.Point(72, 151);
+            this.button8.Location = new System.Drawing.Point(72, 78);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(155, 111);
             this.button8.TabIndex = 7;
             this.button8.Text = "Sertifikalandırma";
             this.button8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button7.Image = global::KursOtomasyonu.Properties.Resources.sertifika;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.Location = new System.Drawing.Point(72, 34);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(155, 111);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Sertifika İşlemleri";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.button12);
             this.groupBox5.Controls.Add(this.button10);
-            this.groupBox5.Location = new System.Drawing.Point(315, 307);
+            this.groupBox5.Location = new System.Drawing.Point(107, 307);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(278, 274);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Muhasebe İşlemleri";
             // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button12.Image = global::KursOtomasyonu.Properties.Resources.muhasebe;
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button12.Location = new System.Drawing.Point(57, 138);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(155, 111);
-            this.button12.TabIndex = 10;
-            this.button12.Text = "Kurs Fiyatlandırma";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button12.UseVisualStyleBackColor = false;
-            // 
             // button10
             // 
             this.button10.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button10.Image = global::KursOtomasyonu.Properties.Resources.muhasebe;
             this.button10.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button10.Location = new System.Drawing.Point(57, 21);
+            this.button10.Location = new System.Drawing.Point(57, 78);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(155, 111);
             this.button10.TabIndex = 9;
             this.button10.Text = "Muhasebe İşlemleri";
             this.button10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button10.UseVisualStyleBackColor = false;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.button5);
-            this.groupBox6.Controls.Add(this.button6);
-            this.groupBox6.Location = new System.Drawing.Point(12, 307);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(278, 274);
-            this.groupBox6.TabIndex = 3;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Ders/Sınıf İşlemleri";
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button5.Image = global::KursOtomasyonu.Properties.Resources.ogretmenicon;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.Location = new System.Drawing.Point(58, 138);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(155, 111);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Eğitmen Atama İşlemleri";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button6.Image = global::KursOtomasyonu.Properties.Resources.ogretmenicon;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.Location = new System.Drawing.Point(58, 21);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(155, 111);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Ders İşlemleri";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // AnaSayfa
             // 
@@ -290,7 +224,6 @@ namespace KursOtomasyonu
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "AnaSayfa";
@@ -300,7 +233,6 @@ namespace KursOtomasyonu
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -312,18 +244,13 @@ namespace KursOtomasyonu
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
     }
 }

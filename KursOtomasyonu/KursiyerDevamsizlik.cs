@@ -25,17 +25,18 @@ namespace KursOtomasyonu
         private void KursiyerDevamsizlik_Load(object sender, EventArgs e)
         {
             db.connection.Open();
-
+            
             db.command = new SqlCommand("Select *From Kursiyer",db.connection);
             db.reader = db.command.ExecuteReader();
 
             DataTable dt = new DataTable();
             dt.Load(db.reader);
+            
             dt.Columns.Add("KursiyerNoVeName", typeof(string), "KursiyerNo + ' - ' + AdSoyad");
             db.connection.Close();
 
             
-
+            
             cmbKursiyer.DataSource = dt.DefaultView;
             cmbKursiyer.DisplayMember = "KursiyerNoVeName";
             cmbKursiyer.ValueMember = "Id";

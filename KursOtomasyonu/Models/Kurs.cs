@@ -10,13 +10,15 @@ namespace KursOtomasyonu.Models
     {
         public int Id { get; set; }
 
-        public string Adı { get; set; }
+        public string Adi { get; set; }
 
-        public string Aciklama { get; set; }
+        public DateTime BaslangicSaati { get; set; }
+
+        public DateTime BitisSaati { get; set; }
+
+        public int EgitmenId { get; set; }
+
         public decimal Fiyat { get; set; }
-
-        public DateTime EklenmeTarihi { get; set; }
-
 
 
     }

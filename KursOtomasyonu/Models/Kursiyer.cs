@@ -20,5 +20,8 @@ namespace KursOtomasyonu.Models
         public DateTime KayitTarihi { get; set; }
 
         public string Adres { get; set; }
+
+        public int KursId { get; set; }
+        public bool UcretOdendi { get; set; }
     }
 }

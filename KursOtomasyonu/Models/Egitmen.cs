@@ -17,6 +17,7 @@ namespace KursOtomasyonu.Models
         public decimal Maas { get; set; }
 
         public string TcNo { get; set; }
+        public bool MaasOdendi { get; set; }
 
 
     }

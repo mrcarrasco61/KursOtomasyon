@@ -43,11 +43,12 @@ namespace KursOtomasyonu
             // dtgDevamsizlikList
             // 
             this.dtgDevamsizlikList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgDevamsizlikList.Location = new System.Drawing.Point(330, 12);
+            this.dtgDevamsizlikList.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dtgDevamsizlikList.Location = new System.Drawing.Point(342, 0);
             this.dtgDevamsizlikList.Name = "dtgDevamsizlikList";
             this.dtgDevamsizlikList.RowHeadersWidth = 51;
             this.dtgDevamsizlikList.RowTemplate.Height = 24;
-            this.dtgDevamsizlikList.Size = new System.Drawing.Size(703, 499);
+            this.dtgDevamsizlikList.Size = new System.Drawing.Size(703, 523);
             this.dtgDevamsizlikList.TabIndex = 0;
             // 
             // label1
